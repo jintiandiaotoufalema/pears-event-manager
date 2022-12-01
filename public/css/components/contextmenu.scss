@@ -1,0 +1,94 @@
+.PearS-layer-contextmenu {
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+
+    .PearS-contextmenu {
+        user-select: none;
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0 0 4px;
+        font-size: x-small;    
+        pointer-events: all;
+        position: fixed;
+        padding: 4px;
+        width: 200px;
+
+        &:not(.main) {
+            display: none;
+            margin-left: 40px;
+        }
+
+        > section {
+            padding: 4px 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid #4e4e4e36;
+            }
+        }
+
+        section.ico-only {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .box {
+            &:hover {
+                > div:first-child {
+                    filter: invert(0.8);
+                }
+
+                > .PearS-contextmenu {
+                    display: initial;
+                }
+            }
+
+            > div:first-child {
+                display: flex;
+                border-radius: 4px;
+                color: var(--rt02);
+                padding: 2px 10px;
+                background-color: white;
+                transition: all .1s ease;
+
+                > * {
+                    align-self: center;
+                }
+
+                [menu-type=ico] {
+                    height: 12px;
+                    width: 12px;
+                    margin-right: 6px;
+                }
+                [menu-type=name] {
+                    /* font-weight: bold; */
+                    width: 90px;
+                    text-overflow: ellipsis;
+                }
+                [menu-type=key] {
+                    opacity: .6;
+                }
+                [menu-type=next] {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .ico-only {
+            .box {
+                > div:first-child {
+                    padding: 6px;
+                    
+                    [menu-type=ico] {
+                        height: 20px;
+                        width: 20px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }    
+}

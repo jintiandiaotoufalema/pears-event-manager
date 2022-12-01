@@ -1,0 +1,44 @@
+{
+  "name": "pears-event-manager",
+  "version": "1.0.0",
+  "description": "一个通用的复杂事件管理器 | A General Complex Event Manager",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node .webpack/dev.command.js",
+    "doc": "jsdoc -c jsdoc.json",
+    "tree": "treer  -i '/node_modules|dist|.git|jsdoc.json|docs|tutorials|.DS_Store/'",
+    "build": "node .webpack/build.command.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jintiandiaotoufalema/pears-event-manager.git"
+  },
+  "keywords": [
+    "mouse",
+    "trackpad",
+    "scroll",
+    "wheel"
+  ],
+  "author": "iktsuarpok",
+  "license": "MIT",
+  "dependencies": {
+    "clean-jsdoc-theme": "^4.1.8",
+    "css-loader": "^6.7.1",
+    "g": "^2.0.1",
+    "html-loader": "^4.2.0",
+    "jquery": "^3.6.1",
+    "jsdoc": "^3.6.11",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jsdoc": "^3.6.11"
+  },
+  "bugs": {
+    "url": "https://github.com/jintiandiaotoufalema/pears-event-manager/issues"
+  },
+  "homepage": "https://github.com/jintiandiaotoufalema/pears-event-manager#readme"
+}

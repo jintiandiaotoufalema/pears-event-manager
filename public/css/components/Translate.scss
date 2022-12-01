@@ -1,0 +1,12 @@
+.PearS-idx-layer[type=translate] {
+    visibility: hidden;
+
+    &.available {
+        visibility: initial;
+        
+        .PearS-idx-ico[type=resize]{
+            visibility: initial;
+            pointer-events: all;
+        }
+    }
+}

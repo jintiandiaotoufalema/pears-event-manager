@@ -1,0 +1,14 @@
+.PearS-layer-frameSelector {
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+
+    .PearS-frameSelector {
+        position: fixed;
+        border-radius: 2px;
+        box-shadow: 0 0 0 1px dodgerblue;
+        background-color: rgba(30, 143, 255, 0.1);
+    }
+}

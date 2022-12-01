@@ -1,0 +1,45 @@
+{
+    "tags": {
+        "allowUnknownTags": false
+    },
+    "source": {
+        "include": [
+            "./src",
+            "./hw.config.js"
+        ],
+        "exclude": [
+            "./src/index.js"
+        ],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "opts": {
+        "template": "node_modules/clean-jsdoc-theme",
+        "tutorials": "./tutorials",
+        "encoding": "utf8",
+        "destination": "docs/",
+        "recurse": true,
+        "verbose": true,
+        "readme": "README.md",
+        "theme_opts": {
+            "default_theme": "dark",
+            "title": "<a href='./index.html' class='sidebar-title'>PearSpectrum</a>",
+            "footer": "<span><a href='https://github.com/jintiandiaotoufalema/PearSpectrum'>jintiandiaotoufalema/PearSpectrum</a> © Iktsuarpok 2022</span>",
+            "sections": ["Classes", "Namespaces", "Global", "Events", "Interfaces", "Modules", "Tutorials"],
+            "menu": [
+                {
+                    "title": "Iktsuarpok",
+                    "link": "https://github.com/jintiandiaotoufalema",
+                    "target": "_blank"
+                }
+            ]
+        }
+    },
+    "markdown": {
+        "hardwrap": false,
+        "idInHeadings": true
+    }
+}
