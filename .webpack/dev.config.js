@@ -1,5 +1,5 @@
 // import {Configuration} from 'webpack';
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 /**
  * @type {Configuration}
@@ -13,12 +13,12 @@ const config = {
                 test: /\.css$/,
                 use: [ 'style-loader', 'css-loader' ]
             },
-            {
-                test: /\.html$/,
-                use: [{
-                    loader: 'html-loader',
-                }]
-            },
+            // {
+            //     test: /\.html$/,
+            //     use: [{
+            //         loader: 'html-loader',
+            //     }]
+            // },
         ]
     },
     // plugins: [
